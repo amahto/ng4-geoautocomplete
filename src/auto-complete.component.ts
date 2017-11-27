@@ -202,17 +202,22 @@ export interface Settings {
       float: inherit;
       position: relative;
     }
+    
+    .custom-autocomplete__input {
+      height: 50px;
+    }
 
     .custom-autocomplete__input input{
       margin: 0;
       padding: 10px;
-      height: 50px;
+      height: 100%;
       border: 1px solid #ccc;
       display: block;
       width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       font-size: 16px;
+      -webkit-appearance: none;
       &::-webkit-input-placeholder {
          color: #868484;
       }
